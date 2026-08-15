@@ -1,0 +1,243 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNoyMdAuFtQ5o/czezTH6+H",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/mohana2004-13/K.mohana/blob/main/mini%20python%20projects\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": 5,
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "kZClaXTp_5Sj",
+        "outputId": "8bb0fd79-0fcf-4e2b-c815-97b525c5a428"
+      },
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=====Simple Calculator=====\n",
+            "enter a number:9\n",
+            "enter a operator('+','-','*','/','%','**'):/\n",
+            "enter a number:0\n",
+            "cannot divide by zero\n",
+            "Result: 0.0\n"
+          ]
+        }
+      ],
+      "source": [
+        "print(\"=====Simple Calculator=====\")\n",
+        "num1=float(input(\"enter a number:\"))\n",
+        "operator=input(\"enter a operator('+','-','*','/','%','**'):\")\n",
+        "num2=float(input('enter a number:'))\n",
+        "if operator == '+' :\n",
+        "    result = num1 + num2\n",
+        "elif operator ==  '-':\n",
+        "    result = num1 - num2\n",
+        "elif operator == '*':\n",
+        "    result = num1 * num2\n",
+        "elif operator == '**':\n",
+        "    result = num1 ** num2\n",
+        "elif operator == '/':\n",
+        "    if num2 != 0:\n",
+        "        result = num1 / num2\n",
+        "    else:\n",
+        "        print(\"cannot divide by zero\")\n",
+        "elif operator == '%':\n",
+        "    result = num1 % num2\n",
+        "else:\n",
+        "    \"invalid operator\"\n",
+        "\n",
+        "print(\"Result:\",result)\n",
+        ""
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"=========Numberchecker========\")\n",
+        "num=int(input(\"enter a number:\"))\n",
+        "if num % 2 == 0:\n",
+        "    print(\"even\")\n",
+        "else:\n",
+        "    print(\"odd\")\n",
+        "if num > 0:\n",
+        "    print(\"positive\")\n",
+        "elif num < 0:\n",
+        "    print(\"negative\")\n",
+        "else:\n",
+        "    print(\"neutral\")\n",
+        "if num % 5 == 0:\n",
+        "    print(\"num is divisle by 5\")\n",
+        "else:\n",
+        "    print(\"num is not divisible by 5\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "YDCCfW6sCu62",
+        "outputId": "47347eee-31cc-4bd4-e156-88911ac0a03b"
+      },
+      "execution_count": 7,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "=========Numberchecker========\n",
+            "enter a number:3\n",
+            "odd\n",
+            "positive\n",
+            "num is not divisible by 5\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "print(\"============Multiplication Table============\")\n",
+        "num=int(input(\"enter a number:\"))\n",
+        "S=int(input(\"enter a number:\"))\n",
+        "E=int(input(\"enter a number:\"))\n",
+        "for i in range(S,E):\n",
+        "    print(f\"{num} x {i} = {num*i}\")"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "CsKcPMfnDIXH",
+        "outputId": "1db67a57-7d2b-4189-b16c-1d20ce168d69"
+      },
+      "execution_count": 8,
+      "outputs": [
+        {
+          "output_type": "stream",
+          "name": "stdout",
+          "text": [
+            "============Multiplication Table============\n",
+            "enter a number:5\n",
+            "enter a number:1\n",
+            "enter a number:20\n",
+            "5 x 1 = 5\n",
+            "5 x 2 = 10\n",
+            "5 x 3 = 15\n",
+            "5 x 4 = 20\n",
+            "5 x 5 = 25\n",
+            "5 x 6 = 30\n",
+            "5 x 7 = 35\n",
+            "5 x 8 = 40\n",
+            "5 x 9 = 45\n",
+            "5 x 10 = 50\n",
+            "5 x 11 = 55\n",
+            "5 x 12 = 60\n",
+            "5 x 13 = 65\n",
+            "5 x 14 = 70\n",
+            "5 x 15 = 75\n",
+            "5 x 16 = 80\n",
+            "5 x 17 = 85\n",
+            "5 x 18 = 90\n",
+            "5 x 19 = 95\n"
+          ]
+        }
+      ]
+    },
+    {
+      "cell_type": "code",
+      "source": [
+        "import random\n",
+        "print(\"===========Guess a Number===========\")\n",
+        "\n",
+        "secret= random.randint(1,100)\n",
+        "attempts=0\n",
+        "while True:\n",
+        "    num=int(input(\"enter a guess number(1-100):\"))\n",
+        "    attempts+=1\n",
+        "    if num > secret:\n",
+        "        print(\"too high\")\n",
+        "    elif num < secret:\n",
+        "        print(\"too low\")\n",
+        "    if attempts > 7:\n",
+        "        break\n",
+        "\n",
+        "    else:\n",
+        "        print(\"correct\")\n",
+        "        print(\"Attempts:\",attempts)\n",
+        "\n"
+      ],
+      "metadata": {
+        "colab": {
+          "base_uri": "https://localhost:8080/"
+        },
+        "id": "rkonilYBD5-N",
+        "outputId": "50b1c2b6-a118-49b5-9751-8bb1d58bad0d"
+      },
+      "execution_count": 9,
+      "outputs": [
+        {
+          "name": "stdout",
+          "output_type": "stream",
+          "text": [
+            "===========Guess a Number===========\n",
+            "enter a guess number(1-100):5\n",
+            "too low\n",
+            "correct\n",
+            "Attempts: 1\n",
+            "enter a guess number(1-100):10\n",
+            "too low\n",
+            "correct\n",
+            "Attempts: 2\n",
+            "enter a guess number(1-100):80\n",
+            "too high\n",
+            "correct\n",
+            "Attempts: 3\n",
+            "enter a guess number(1-100):55\n",
+            "too low\n",
+            "correct\n",
+            "Attempts: 4\n",
+            "enter a guess number(1-100):60\n",
+            "too low\n",
+            "correct\n",
+            "Attempts: 5\n",
+            "enter a guess number(1-100):70\n",
+            "too low\n",
+            "correct\n",
+            "Attempts: 6\n",
+            "enter a guess number(1-100):75\n",
+            "too low\n",
+            "correct\n",
+            "Attempts: 7\n",
+            "enter a guess number(1-100):79\n"
+          ]
+        }
+      ]
+    }
+  ]
+}
